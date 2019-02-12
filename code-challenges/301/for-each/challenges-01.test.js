@@ -56,7 +56,7 @@ const removeElements = (arr, callback) => {
   for ( let i = 0; i < arr.length; i++){
 		callback(arr[i], arr)
 	}
-	return arr
+	return arr;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -65,7 +65,10 @@ Write a function named removeWithForEach that produces the same output as challe
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithForEach = (arr, callback) => {
-  // Solution code here...
+  arr.forEach( (item) => {
+		callback(item, arr)
+	});
+	return arr;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -76,7 +79,14 @@ This anonymous function should accept up to three arguments: the element, the in
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithAnon = (arr) => {
-  // Solution code here...
+	let x = function (num, arr) {
+		if ((num % 3) === 2){
+			arr.pop();
+		}
+	}
+	arr.forEach((x) => {
+	});
+	return arr
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -94,7 +104,13 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+	let list = [];
+	availableItems.forEach((element) => {
+		if (element.available === true){
+			list.push(element.name);
+		}
+	});
+	return list;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -109,7 +125,22 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+	let finalArr = [];
+  arr.forEach((num) => {
+		if (num % 3 === 0 && num % 5 === 0){
+			finalArr.push('Fizz Buzz')
+		} 
+		else if (num % 3 === 0){
+			finalArr.push('Fizz')
+		}
+		else if (num % 5 === 0){
+			finalArr.push('Buzz')
+		}
+		else{
+			finalArr.push(num)
+		}
+	});
+	return finalArr;
 }
 
 /* ------------------------------------------------------------------------------------------------
