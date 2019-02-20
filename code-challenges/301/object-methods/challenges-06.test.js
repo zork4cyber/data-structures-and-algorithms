@@ -98,12 +98,24 @@ hasChildrenValues(characters, 'Eddard') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-    for(let i in arr){
-        console.log(arr[i].name, arr[i].children);
-        if(character === arr[i].name && Object.values(arr[i].children === [])){
-        }
+  for(let i of arr){
+    if(character === i.name){
+      return Object.values(i)[2].length;
     }
+  }
+    return false;
 }
+
+    // Solution
+  //   const hasChildrenValues = (arr, character) => {
+  //   let children = 0;
+  //   Object.values(arr).forEach(person => {
+  //     if(person.name === character){
+  //       children = person.children.length > 0 ?true : false;
+  //     }
+  //   })
+  //   return children;
+  // }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
