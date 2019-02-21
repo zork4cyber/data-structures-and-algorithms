@@ -53,8 +53,7 @@ For example: charCode(['h','i']) returns [104, 105].
 ------------------------------------------------------------------------------------------------ */
 
 const charCode = (arr) => {
-  let result = arr.map(letter => letter.charCodeAt(0));
-  return result;
+  return arr.map(letter => letter.charCodeAt());
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -68,8 +67,9 @@ For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 ------------------------------------------------------------------------------------------------ */
 
 const evenOdd = (arr) => {
-  // Solution code here...
-};
+  console.log(arr);
+  arr.map(item => typeof item === 'number' ? )
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
