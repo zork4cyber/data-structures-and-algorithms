@@ -26,11 +26,7 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 const filterStringsWithVowels = (arr) => {
   let pattern = /(a|e|i|o|u)/ig;
   return arr.filter(word => word.match(pattern));
-}; 
-
-// const filterItems = (query) => {
-//   return fruits.filter(el => el.toLowerCase().indexOf(query.toLowerCase()) > -1);
-// };
+};
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -85,7 +81,7 @@ const snorlaxData = {
 };
 
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
-  return arr.filter(stat => stat.baseStat > minBaseStat ? true: false);
+  return arr.filter(stat => stat.baseStat > minBaseStat);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -97,7 +93,7 @@ For example, getStatName(snorlaxData.stats, 50) will return ['special-defense', 
 ------------------------------------------------------------------------------------------------ */
 
 const getStatName = (arr, minBaseStat) => {
-  console.log(arr.filter(Obj => Obj.baseStat > minBaseStat ? Obj.stat.name: false));
+  return arr.filter(el => el.baseStat > minBaseStat).map(el => el.stat.name);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -150,7 +146,7 @@ const characters = [
 ];
 
 const getCharactersWithoutChildren = (arr) => {
-  // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -162,7 +158,7 @@ For example: evenOddNumericValues(['Gregor', 2, 4, 1]) returns ['even', 'even', 
 ------------------------------------------------------------------------------------------------ */
 
 const evenOddNumericValues = (arr) => {
-  // Solution code here...
+//use type of first then map over it
 };
 
 /* ------------------------------------------------------------------------------------------------
