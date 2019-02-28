@@ -98,25 +98,20 @@ hasChildrenValues(characters, 'Eddard') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  for(let i of arr){
-    if(character === i.name){
-      return Object.values(i)[2].length;
-    }
-  }
-    return false;
-}
-
-    // Solution
-  //   const hasChildrenValues = (arr, character) => {
-  //   let children = 0;
-  //   Object.values(arr).forEach(person => {
-  //     if(person.name === character){
-  //       children = person.children.length > 0 ?true : false;
-  //     }
-  //   })
-  //   return children;
+  // for(let i of arr){
+  //   if(character === i.name){
+  //     return Object.values(i)[2].length;
+  //   }
   // }
-
+  // return false;
+  let child = 0;
+  Object.values(arr).forEach(el => {
+    if(el.name === character){
+      child = el.children.length > 0 ? true: false;
+    }
+  })
+  return child;
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -126,7 +121,17 @@ The input and output of this function are the same as the input and output from 
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenEntries = (arr, character) => {
+  
+  let child = 0;
+  Object.entries(arr).forEach(item => {
+    item.forEach(el => {
+      if(el.name === character) {
+        child = el.children.length > 0 ? true : false;
+      }
+    })
+  })
 
+  return child;
 }
 
 /* ------------------------------------------------------------------------------------------------
