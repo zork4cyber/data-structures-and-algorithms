@@ -12,14 +12,13 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
 const count = (target, input) => {
-  console.log(target);
-  let count = 0;
-  input.map(el => el.map(num => {
-    if(target === num){
-      console.log(target, num);
-    }
-  }))
-  // console.log(count);
+  return input.reduce((accumulator, value) => {
+    return accumulator + (value.filter(element => element === target).length);
+  }, 0);
+  // let newArr = input.map(element => element.filter(num => num === target).length);
+  // return newArr.reduce(function(accumulator, value) {
+  //   return accumulator + value;
+  // });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -33,8 +32,15 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-  const reducer = (acc, curVal) => acc + curVal;
-  input.map(el => el.reduce(reducer))
+  // const reducer = (acc, curVal) => acc + curVal;
+  // input.map(el => el.reduce(reducer))
+  // console.log(input);
+  let newArr = input.map(arr => arr.reduce(function(accumulator, value) {
+    return accumulator + value;
+  }));
+  return newArr.reduce(function(accumulator, value) {
+    return accumulator + value;
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -50,7 +56,9 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-
+  let newArr = input.map(element => element.filter(num => num % 5 === 0));
+  // console.log(newArr);
+  return newArr.map(arr => arr.map(num => Math.pow(2, num)));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -134,6 +142,9 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   // data.map(el => console.log(el.height, el.name))
+  return data.sort((a, b) => {
+    return a.height - b.height;
+  })[0].name;
 }
 
 /* ------------------------------------------------------------------------------------------------
