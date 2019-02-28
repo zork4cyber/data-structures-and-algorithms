@@ -16,8 +16,8 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   while (str.length){
-      result.push(str);
-      str = str.slice(1);
+    result.push(str);
+    str = str.slice(1);
   }
   result.push(str)
   return result;
@@ -127,13 +127,8 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const removeEvenValues = (arr) => {
-    for (let i = 0; i < arr.length; i++){
-        if (!(arr[i] % 2)){
-            arr.splice(i, 1);
-        }
-    }
-    console.log(arr);
-    return arr;
+  console.log([1, 2, 3, 4, 5, 6].filter(num => num % 2 === 1));
+  return arr.filter(num => num % 2 === 1);
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
@@ -151,7 +146,7 @@ removeLastCharacters('Gregor', 9) returns ''
 ------------------------------------------------------------------------------------------------ */
 
 const removeLastCharacters = (str, numberOfCharacters) => {
-  // Solution code here...
+  return str.slice(0, str.length - numberOfCharacters);
 };
 
 
