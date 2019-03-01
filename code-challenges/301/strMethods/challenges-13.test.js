@@ -122,7 +122,7 @@ For example, ['Tuesday', 'Monday', 'Wednesday and Thursday', 'Tuesday 2', 'Thurs
 const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 const sortByDay = (arr) => {
-  console.log(daysOfWeek.map(day => arr.map(str => str.includes(day))));
+  return daysOfWeek.map(day => arr.filter(str => str.includes(day)));
 };
 
 /* ------------------------------------------------------------------------------------------------
