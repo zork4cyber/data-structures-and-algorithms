@@ -12,7 +12,6 @@ const validatePin = (pin) => {
   const compare = /\b[0-9]{4}\b/g;
   return compare.test(pin);
 };
- 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
