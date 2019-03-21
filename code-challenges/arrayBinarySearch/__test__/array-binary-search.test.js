@@ -3,14 +3,12 @@
 const arrayBinary = require('../array-binary-search.js');
 
 describe('array-binary-search.js test', () => {
-
   let sortedArray = [1,2,3,4,5];
   let unsortedArray = [1,9,2,8,3,7];
 
   it('When given a sorted array and search key, it should find the index of the key or return -1', () => {
     expect(arrayBinary.binarySearch(sortedArray,2)).toEqual(1);
   });
-
   it('Require two arguments', () => {
     expect(arrayBinary.binarySearch(9)).toBeNull();
   });
@@ -28,5 +26,4 @@ describe('array-binary-search.js test', () => {
   it('Requires array and value to be interger', () => {
     expect(arrayBinary.binarySearch(['a','b','c','d','e'],null)).toBeNull();
   });
-
 });
