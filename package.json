@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --verbose --testPathIgnorePatterns code-challenges/301/",
-    "watch": "jest --watchAll --coverage --verbose"
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --coverage --verbose",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json",
+    "watch": "jest --verbose --coverage --watch"
   },
-  "author": "Alex White",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "eslint": "^5.15.3",
-    "jest": "^24.5.0"
+    "jest": "^24.5.0",
+    "jsdocs": "^1.0.0"
   }
 }

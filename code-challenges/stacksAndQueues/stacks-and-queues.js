@@ -19,7 +19,13 @@ class Stack {
   }
 
   pop() {
-
+    if (this.top) {
+      let pooped = this.top.value;
+      this.top = this.top.next;
+      return pooped;
+    } else {
+      return null;
+    }
   }
 
 
