@@ -11,7 +11,7 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 We started by declaring 4 references: ll2 and ll2 heads and the next of those heads. We then checked edge cases foir different lengths of each linked list. Finally we set a conditional to zip them together until we hit a null. We then returned the required head refernece for the zipped head. Big O space we kept to O(1) because we are zipping into one linked list. Space is O(n).
 
 ## Solution
-[!Diagram]()
+[!Diagram](assets/LL-merge.JPG)
 
 #Collaborators
 Jason Burns
