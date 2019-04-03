@@ -10,7 +10,7 @@
 
 
 ## Image
-![fifoAnimalShelter Image](../../assets/fifoanimalshleter.jpg)
+![fifoAnimalShelter Image](../data-structures-and-algorithms/assets/fifoanimalshleter.JPG)
 
 ### Collaborators
 * Daniel Logerstedt
