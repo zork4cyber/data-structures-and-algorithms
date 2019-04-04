@@ -1,6 +1,6 @@
 # Multi Bracket Validation
 
-[PR]()
+[PR](https://github.com/alex-white-401-advanced-javascript/data-structures-and-algorithms/pull/8)
 
 ## Feature Tasks
 * On your main file, create JavaScript: a function called multiBracketValidation(input)
