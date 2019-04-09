@@ -1,6 +1,6 @@
 # FizzBuzz Tree
 <!-- Short summary or background information -->
-[PR]()
+[PR](https://github.com/alex-white-401-advanced-javascript/data-structures-and-algorithms/pull/9)
 
 ## Challenge
 Conduct “FizzBuzz” on a tree while traversing through it. Change the values of each of the nodes dependent on the current node’s value
