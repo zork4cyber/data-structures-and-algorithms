@@ -30,6 +30,22 @@ class BinaryTree {
 
     return data;
   }
+
+  breadth_first(node) {
+    let queue = [node];
+    while(queue.length != 0) {
+      queue.unshift();
+      if(node.left) {
+        queue.shift(node.left);
+        console.log(node.left.value);
+      }
+      if(node.right) {
+        queue.shift(node.right);
+        console.log(node.right.value);
+      }
+    }
+
+  }
 }
 
 class BinarySearchTree {
