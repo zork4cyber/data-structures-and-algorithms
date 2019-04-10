@@ -20,3 +20,8 @@
 #### Binary Search Tree
 * `Add`: Accepts a value, and adds a new node with that value in the correct location in the binary search tree.
 * `Contains`: Accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+
+
+### DIAGRAM
+#### Breadth first
+![Breadth-first](../../assets/breadth_first.jpg)
