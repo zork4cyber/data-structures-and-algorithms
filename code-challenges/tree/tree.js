@@ -44,8 +44,20 @@ class BinaryTree {
         console.log(node.right.value);
       }
     }
-
+    return queue;
   }
+
+  find_max_value(node) {
+    let arr = this.breadth_first(node);
+    for(let i in arr){
+      let biggest = arr[0];
+      if(arr[i] > biggest){
+        biggest = arr[i];
+      }
+      return biggest;
+    }
+  }
+
 }
 
 class BinarySearchTree {
