@@ -50,6 +50,5 @@ So how do you sort data with quick sort? How does this algorithm work? It all re
 **Read**
 
 * [JS: Interview Questions - Quick Sort](https://khan4019.github.io/front-end-Interview-Questions/sort.html#quickSort)
-* [Merge Sort Algorithm](https://www.interviewbit.com/tutorial/merge-sort-algorithm/)
 
 <!-- **Bookmark** -->
