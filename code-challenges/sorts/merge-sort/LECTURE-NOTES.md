@@ -21,9 +21,9 @@ So how do you sort a list with merge sort, how does this algorithm work? It all 
   * Go here 
   
 ## Diagram
-
+* Divide the unsorted list into `n` sublists, each comprising 1 element.
 ![Diagram 1](./merge-sort-lecture-1.png)
-
+* Repeatedly merge sublists to produce newly sorted sublists until there is only 1 sublist remaining. This will be the sorted list.
 ![Diagram 2](./merge-sort-lecture-2.png)
 
 ## Algorithm
