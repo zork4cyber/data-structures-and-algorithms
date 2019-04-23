@@ -1,4 +1,5 @@
 # Lecture Notes: Merge Sort
+#### Author: Alexander White
 
 Merge sort is one of the commonly used sorting algorithms in computer science.
 
@@ -21,9 +22,9 @@ So how do you sort a list with merge sort, how does this algorithm work? It all 
   
 ## Diagram
 
-![Diagram 1](../../merge-sort-lecture-1.png)
+![Diagram 1](./merge-sort-lecture-1.png)
 
-![Diagram 2](../../merge-sort-lecture-2.png)
+![Diagram 2](./merge-sort-lecture-2.png)
 
 ## Algorithm
 
