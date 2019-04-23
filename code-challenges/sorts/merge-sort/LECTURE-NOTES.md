@@ -34,7 +34,14 @@ Include small code snippets to possibly support the points
 ## Pseudocode
 
 ```javascript
-nofgfg
+     1. Find the middle point to divide the array into two arrays:  
+     
+     2. Call mergeSort for first array:   
+             
+     3. Call mergeSort for second array:
+             
+     4. Merge the two halves sorted in step 2 and 3:
+             
 ```
 
 ## Readings and References
