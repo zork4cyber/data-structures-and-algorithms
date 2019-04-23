@@ -1,4 +1,5 @@
 # Insertion Sort
+[Repo](https://github.com/alex-white-401-advanced-javascript/data-structures-and-algorithms/tree/insertion-sort/code-challenges/sorts)
 [PR](https://github.com/alex-white-401-advanced-javascript/data-structures-and-algorithms/pull/12)
 
 ## Challenge
