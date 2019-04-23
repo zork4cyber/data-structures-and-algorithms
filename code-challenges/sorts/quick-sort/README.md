@@ -1,6 +1,7 @@
 # Quick Sort
-* [Repo]()
+* [Repo](https://github.com/alex-white-401-advanced-javascript/data-structures-and-algorithms/tree/master/code-challenges/sorts/quick-sort)
 * [PR](https://github.com/alex-white-401-advanced-javascript/data-structures-and-algorithms/pull/13)
+* [Lecture README](https://github.com/alex-white-401-advanced-javascript/data-structures-and-algorithms/blob/master/code-challenges/sorts/quick-sort/LECTURE.md)
 
 ## Challenge
 
