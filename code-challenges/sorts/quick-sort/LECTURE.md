@@ -21,7 +21,7 @@ So how do you sort data with quick sort? How does this algorithm work? It all re
   * It is easier to implement than Heap or Merge Sort
   
 ## Diagram
-![Quick Sort Diagram](./assets/quick-sort-lecture.png)
+![Quick Sort Diagram](./assets/quick-sort-lecture.jpg)
 <!-- Reference -->
 <!-- https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/tutorial/ -->
 
