@@ -37,7 +37,7 @@ class Graph{
   }
 
   print(){
-    for(const[key,value] of this.adjacencyList){
+    for(let[key,value] of this.adjacencyList){
       console.log(key,value);
     }
   }
@@ -46,10 +46,13 @@ class Graph{
 const graph = new Graph();
 let a = graph.addVertex('Washington');
 let b = graph.addVertex('North Dakota');
-let c = graph.addVertex('California');
+// let c = graph.addVertex('California');
 
 graph.addUndirectedEdge(a,b,10);
-graph.addDirectedEdge(b,c,90);
-graph.addDirectedEdge(a,c,9);
+// graph.addDirectedEdge(b,c,90);
+// graph.addDirectedEdge(a,c,9);
 
-graph.print();
+// graph.print();
+console.log(graph.adjacencyList);
+// console.log(graph.print());
+module.exports = {Vertex, Edge, Graph};
