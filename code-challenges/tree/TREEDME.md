@@ -1,6 +1,5 @@
 # Trees
 
-[PR](https://github.com/alex-white-401-advanced-javascript/data-structures-and-algorithms/pull/11)
 
 ## Feature Tasks
 #### Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
@@ -21,13 +20,3 @@
 * `Add`: Accepts a value, and adds a new node with that value in the correct location in the binary search tree.
 * `Contains`: Accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
 
-## Find Max Value
-* Write a function called find-maximum-value which takes binary tree as its only input. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
-
-
-### DIAGRAM
-#### Breadth first
-![Breadth-first](../../assets/breadth_first.jpg)
-
-#### Find max value
-![Find Max Value](../../assets/max_val.jpg)
